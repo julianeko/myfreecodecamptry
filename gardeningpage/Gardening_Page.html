@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+
+<!--
+Copyright 2021 Juliane Kohnert
+
+This is just a testpage for me to learn html/css. I do the freecodecamp.org course and one challenge was to build a tribute page. 
+So, regarding to the content I did not give it to much of a thought as the challenge here is the coding. But the easier it will be for me to code, the more thoughts I will give about the content.
+
+All pictures copyright: Juliane Kohnert; Creative Commons: Attribution-ShareAlike (CC BY-SA)
+
+-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+<title>The page of sunshine</title>
+
+
+<style>
+
+.flowers {background-image: url("Flowers_Freising2.jpg"); background-repeat: no-repeat;
+background-size: cover;}
+
+
+
+#title {font-family: Lucida Handwriting;
+font-size: 40px;
+color: #9ACD32;
+text-align: center;
+text-shadow: 2px 2px black;}
+
+h2 {text-align: center;}
+
+#firstlane {font-family: Lucida Handwriting;
+color: #9ACD32;
+font-size: 28px;
+text-shadow: 2px 2px black;}
+
+ul {font-family: Lucida Handwriting;
+color: #9ACD32;
+font-size: 20px;}
+
+a{font-family: Lucida Handwriting;
+color: #9ACD32;
+font-size: 12px;}
+
+#Impressum {font-family: Lucida Handwriting;
+color: #9ACD32;
+font-size: 16px;}
+
+
+
+#img-div{}
+
+#image {
+width: 100%;
+max-width: 4000px;
+display: block;}
+
+#img-caption {font-family: Lucida Handwriting;
+color: #9ACD32;
+font-size: 16px;}
+
+#tribute-info {font-family: Lucida Handwriting;
+color: #9ACD32;
+font-size: 20px;}
+
+.header
+{grid-area: header;}
+
+.advert{grid-area: advert;
+}
+#advert {width: 100%;
+display: block;}
+
+
+.text{grid-area: text;}
+.image{grid-area: image;}
+.footer{grid-area: footer;}
+
+.container {font-size: 16px;
+width: 33,33%; 
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: auto 1fr auto;
+grid-gap: 15px;
+
+grid-template-areas:
+
+"header header header"
+"advert text image"
+". footer .";}
+
+
+
+
+</style>
+
+</head>
+
+
+
+
+
+<body>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main id="main">
+
+
+
+
+<div class="container">
+
+  <div class="flowers header"> 
+
+
+
+ <h1 id="title">The page of sunshine</h1>
+<h2 id="firstlane"> Why you should have a flowerfull life </h2>
+
+
+
+</div>
+
+
+  <div class="advert">
+  <img id="advert" src="Seerosen2.JPG" alt="Picture of waterlilies"></img>
+<div id="img-caption">These are water lilies from a public botanical garden. </div>
+</div>
+
+
+
+<div id="img-div" class="image"> 
+<img id="image" src="akelei2.jpg" alt="A flower from our garden, named Akelei"> </img>
+
+<div id="img-caption">This is a flower from our garden, it is called Akelei. </div>
+</div>
+
+<div class="text">
+ <p id="tribute-info"> OK; what is this tribute page about?  
+   I have never built a page before. It is part of the freecodecamp.org course to build a tribute page.
+So i thought it might be nice to start with a topic I love, gardening and flowers. I am not flower expert, but here is a list of what we planted so far or what does obviously grow in our garden just natural. 
+ Side information: We live nearby a wooden area. And of course this is not everything in our garden, but the challenge here for me is the coding.
+
+
+ Here the list (unfortunately I do only know the names in german):
+<ul>
+<li> Vergissmeinicht</li>
+<li>  Waldmeister <a id="tribute-link" target="_blank" href="https://de.wikipedia.org/wiki/Waldmeister"> More Information. </a></li>
+<li> Walderdbeere</li>
+<ul/>
+</p> 
+</div>
+
+<footer class= "footer" id="Impressum"> The defintion of madness is always doing the same thing and hoping of another outcome </footer>
+
+</div>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+</body>
+
+
+
+</html>
