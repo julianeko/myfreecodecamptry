@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<!--
+Copyright 2021 Juliane Kohnert
+
+This is just a testpage for me to learn html/css. I do the freecodecamp.org course and one challenge was to build a product landing page. 
+So, regarding to the content I did not give it to much of a thought as the challenge here is the coding. But the easier it will be for me to code, the more thoughts I will give about the content.
+Hence, this is not a real shop here and I do not want to sell anything.
+All pictures copyright: Juliane Kohnert; Creative Commons: Attribution-ShareAlike (CC BY-SA)
+
+-->
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>The product landing page</title>
+</head>
+
+<style>
+    h1 {margin-bottom: 20px; text-align: center; font-size: 46px; color: white;}
+    h2 {text-align: center; color: white; font-size: 32px;}
+    p {font-size: 24px;}
+
+
+    
+    
+    
+    #header-div{margin-bottom: 10px;}
+
+    #header{display: block; position: fixed; background-color: whitesmoke; box-shadow: 0px 0px 10px 10px whitesmoke; background-size: 
+    cover; width: 100%; height: 110px; top: 0px; margin-bottom: 30px;}
+     
+    #header-img {position:fixed; width: 280px; left: 45px; top: 0px; box-shadow: 0px 0px 5px 5px whitesmoke;}
+    @media only screen and (max-width: 1638px) {#header-img {height: 120px; width: auto;}}
+    
+    
+    body {margin-top: 130px; background-color: darkolivegreen; color: white;}
+
+   
+    form {text-align: center; margin-top: 20px;}
+
+
+    .flex-container {display: flex; flex-direction: row; border-style: solid; border-color:white;}
+    .flex-container-picture2 {display: flex; flex-direction: row; border-style: solid; border-color:white;}
+
+    @media only screen and (max-width: 1000px) {.flex-container {flex-direction: column;}}
+    @media only screen and (max-width: 1000px) {.flex-container-picture2 {flex-direction: column-reverse;}}
+    
+    .flex-container2 {display: inline; text-align: right;}
+    .flex-container-text {display: inline; width: 50%; margin: 20px; text-align: justify;}
+    #picture1{display: inline; max-width: 1000px; width: 100%;}
+    #picture2{display: inline; max-width: 1000px; width: 100%;}
+    #picture3{display: inline; max-width: 700px; width: 80%;}
+
+
+
+
+   @media only screen and (max-width: 1000px) {.flex-container-text {width:auto; margin: 10px;}}
+
+    @media only screen and (max-width: 1000px) {#picture3 {max-width:1000px; width:100%;}}
+
+
+
+    #nav-bar{display: flex; justify-content: flex-end; color: darkolivegreen}
+    #navbarlist{display: flex; flex-direction: row; margin-top: 5%; font-size: 15px; color: darkolivegreen;}
+    .list{padding-left: 5px; padding-right: 5px; margin-right: 10px; margin-left: 10px; margin-top: 0%; color: darkolivegreen}
+    #navbarid{position: relative; text-align: right; color: darkolivegreen;}
+        a.navlink:visited {color: darkolivegreen;}
+
+
+ul{list-style-type: none;}
+ @media only screen and (max-width: 1000px) {#navbarlist {flex-direction: column; font-size: 13px;}}
+
+
+
+    #email{margin: 10px;}
+
+    #videocenter{text-align: center;}
+    #video{margin: 20px;}
+
+    
+
+</style>
+
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+<div id="header-div">
+    <header id="header">
+        <img id="header-img" src="logo.jpg" alt="The company Logo">
+    
+        
+        
+    </img> 
+
+    
+  
+
+    <div id=navbarid>
+        <nav id="nav-bar">
+          <ul id="navbarlist">
+            <li class="list"><a class="nav-link" href="#picture1">Picture 1</a></li>
+            <li class="list"><a class="nav-link" href="#picture2">Picture 2</a></li>
+            <li class="list"><a class="nav-link" href="#picture3">Picture 3</a></li>
+            <li class="list"><a class="nav-link" href="#email">More information</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    
+    
+  
+
+    </header>
+
+</div>  
+
+<h1> The free for all flower-shopping-shop
+</h1>
+
+
+<div class="flex-container">
+    <div class="flex-container1">
+    <img id="picture1" src="picture1.jpg" alt="Echinacea is a healing flower">
+</img>
+</div>
+
+
+    <div class="flex-container-text">
+
+        <h2>Some information about Echinacea</h2>
+    <p class="textright"> Echinacea is a healing plant. 
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        
+    
+    </p>
+
+</div>
+
+ 
+
+</div>
+
+<div class="flex-container-picture2">
+    <div class="flex-container-text">
+
+        <h2>These are autumn flowers</h2>
+    <p> These are information about autumn flowers. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="flex-container2">
+    <img id="picture2" src="picture2.jpg" alt="These are autumn flowers">
+</img>
+</div>
+</div>
+
+<div class="flex-container">
+    <img id="picture3" src="picture3.jpg" alt="Echinacea is a healing flower">
+    </img>
+    <div class="flex-container-text">
+    <h2>Flowers I do not know</h2>
+    
+        <p class="textright">hLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        </div>
+
+</div>
+
+<h2>And a nice video to liften up your gardening mood</h2>
+
+<div id=videocenter>
+<video id="video" width="60%" height="auto" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  </div>
+
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+<legend> If you want us to send you our product catalogue please enter your email address below </legend>
+
+<label for="email"> Email:
+</label>
+<input id="email" type="email" name="email" required placeholder="Enter a valid email address"> </input> 
+
+
+    <input id="submit" type="submit" name="submit" value="Submit">
+</form>
+
+
+
+</body>
+
+</html>
