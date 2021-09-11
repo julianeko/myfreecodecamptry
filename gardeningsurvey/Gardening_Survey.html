@@ -12,168 +12,267 @@ All pictures copyright: Juliane Kohnert; Creative Commons: Attribution-ShareAlik
 
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-<title>The gardeners survey form</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>The gardeners survey form</title>
 
-<style>
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
 
 
-.beginn{width: 50%; margin: auto; background-color: rgba(245,245,245,0.6); font-family:'KoHo', sans-serif; color: #008B00;}
+        .beginn {
+            width: 50%;
+            margin: auto;
+            background-color: rgba(245, 245, 245, 0.6);
+            font-family: 'KoHo', sans-serif;
+            color: #008B00;
+        }
 
-@media only screen and (max-width: 1000px) {.beginn {width: 100%;}}
-
-
-#title{text-align: center; width: 100%; font-size: 32px;}
-
-#description{font-size: 20px; text-align: center; padding-left: 10px; padding-right: 10px;}
-
-.background {background-image: url("Herbst.JPG"); background-repeat: no-repeat; background-size: cover; position: relative;}
- 
-h2 {font-size: 24px; width: 100%; text-align: center;}
-
-#survey-form {color: #008B00; width: 70%; font-size: 18px; margin: auto;}
-
-legend {position: relative; text-align: left;}
-
-#number{width: 150px; flex=100%; min-width: 150px; margin: 3px; font-family:'KoHo', sans-serif;}
-#email{width: 150px; flex=100%; min-width: 150px; margin: 3px; font-family:'KoHo', sans-serif;}
-#name{width: 150px; flex=100%; min-width: 150px; margin: 3px; font-family:'KoHo', sans-serif;}
-#dropdown{width: 150px; flex=100%; position: relative; left: 3%; display: inline; font-family:'KoHo', sans-serif;}
+        @media only screen and (max-width: 1000px) {
+            .beginn {
+                width: 100%;
+            }
+        }
 
 
+        #title {
+            text-align: center;
+            width: 100%;
+            font-size: 32px;
+        }
 
-.abstand{padding: 10px 20px 10px 10px;}
-.abstand2{padding-top: 10px; padding-bottom: 6px; padding-left: 10px; padding-right: 10px;}
-.abstand3{padding-top: 0px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;}
-.abstand4{padding-top: 20px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;}
+        #description {
+            font-size: 20px;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
-.checkbox{padding-right: 20px; width: auto;}
+        .background {
+            background-image: url("Herbst.JPG");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
 
-.inputlabel{margin-left: 53px;}
+        h2 {
+            font-size: 24px;
+            width: 100%;
+            text-align: center;
+        }
 
-label{width:50px; display: inline-block;}
+        #survey-form {
+            color: #008B00;
+            width: 70%;
+            font-size: 18px;
+            margin: auto;
+        }
 
-textarea {font-family:'KoHo'; text-align: center; width: 300px; height: 200px;}
+        legend {
+            position: relative;
+            text-align: left;
+        }
 
-#textarea {text-align: center;}
+        #number {
+            width: 150px;
+            flex=100%;
+            min-width: 150px;
+            margin: 3px;
+            font-family: 'KoHo', sans-serif;
+        }
 
-#submit{width: 10%; min-width: 70px; font-family:'KoHo';}
-#submit:hover {font-weight: bold; font-family:'KoHo';}
+        #email {
+            width: 150px;
+            min-width: 150px;
+            margin: 3px;
+            font-family: 'KoHo', sans-serif;
+        }
 
-#submitbuttondiv{text-align: right;}
+        #name {
+            width: 150px;
+            min-width: 150px;
+            margin: 3px;
+            font-family: 'KoHo', sans-serif;
+        }
+
+        #dropdown {
+            width: 150px;
+            position: relative;
+            left: 3%;
+            display: inline;
+            font-family: 'KoHo', sans-serif;
+        }
 
 
-</style>
+
+        .abstand {
+            padding: 10px 20px 10px 10px;
+        }
+
+        .abstand2 {
+            padding-top: 10px;
+            padding-bottom: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .abstand3 {
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .abstand4 {
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .checkbox {
+            padding-right: 20px;
+            width: auto;
+        }
+
+        .inputlabel {
+            margin-left: 53px;
+        }
+
+        label {
+            width: 50px;
+            display: inline-block;
+        }
+
+        textarea {
+            font-family: 'KoHo';
+            text-align: center;
+            width: 300px;
+            height: 200px;
+        }
+
+        #textarea {
+            text-align: center;
+        }
+
+        #submit {
+            width: 10%;
+            min-width: 70px;
+            font-family: 'KoHo';
+        }
+
+        #submit:hover {
+            font-weight: bold;
+            font-family: 'KoHo';
+        }
+
+        #submitbuttondiv {
+            text-align: right;
+        }
+    </style>
 </head>
 
 
 <body class="background">
 
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
 
-<main>
+    <main>
 
-<div class="beginn"> 
-<h1 id="title"> Which flowers are perfect <br>in a nature-friendly garden?</h1>
+        <div class="beginn">
+            <h1 id="title"> Which flowers are perfect <br>in a nature-friendly garden?</h1>
 
-<p id="description"> This is a small survey to improve our gardening skills. 
-We would be very happy about recommendations.
-To make it easy and quick for you it is in a form of a survey. </p> 
-<h2> Please fill in your recommendations and tricks below </h2>
-<form id="survey-form"> 
-
-
-<legend class="abstand2"> But first do I need some information about you: </legend>
+            <p id="description"> This is a small survey to improve our gardening skills.
+                We would be very happy about recommendations.
+                To make it easy and quick for you it is in a form of a survey. </p>
+            <h2> Please fill in your recommendations and tricks below </h2>
+            <form id="survey-form">
 
 
-
-<div class="abstand3">
-<label id="name-label" for="name"> Name: </label>
-<input type="text" id="name" required placeholder="Enter your full name">
-</div>
-
-<div class="abstand">
-<label id="email-label" for="email"> Email: </label>
-<input type="email" size="20" id="email" required placeholder="Enter a valid email address">
-</div>
+                <legend class="abstand2"> But first do I need some information about you: </legend>
 
 
-<div class="abstand">
-<label id="number-label" for="Number"> Age: </label> 
-<input type="number" size="20" id="number" required placeholder="Enter your age" min="14" max="115">
-</div>
+
+                <div class="abstand3">
+                    <label id="name-label" for="name"> Name: </label>
+                    <input type="text" id="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="abstand">
+                    <label id="email-label" for="email"> Email: </label>
+                    <input type="email" size="20" id="email" required placeholder="Enter a valid email address">
+                </div>
 
 
-<legend class="abstand2">Choose you favourite gardening topic:</legend>
-
-<select class="inputlabel" id="dropdown" name=selection">
-<option value="s1">Trees</option>
-<option value="s2">Flowers</option>
-<option value="s3">Tools</option>
-</select>
+                <div class="abstand">
+                    <label id="number-label" for="Number"> Age: </label>
+                    <input type="number" size="20" id="number" required placeholder="Enter your age" min="14" max="115">
+                </div>
 
 
-<div class="abstand4">
+                <legend class="abstand2">Choose you favourite gardening topic:</legend>
 
-<legend class="abstand2">Which flowers do you like most:</legend>
-<input class="inputlabel" id="Akelei" type="radio" name="Flowers" value="Akelei">
-<label for="Akelei">Akelei</label></br>
-
-<input class="inputlabel" id="Vergissmeinicht" type="radio" name="Flowers" value="Vergissmeinicht">
-<label for="Vergissmeinicht">Vergissmeinicht</label> </br>
-
-<input class="inputlabel" id="Gaura" type="radio" name="Flowers" value="Gaura">
-<label for="Gaura">Gaura</label> 
-
-</div>
-
-<div class="abstand4">
-<legend>Please fill in your gardening skills: </legend>
-
-<input  type="checkbox" value="Pro">
-<label class="checkbox" for="Pro">Pro</label>
- 
-<input type="checkbox"  value="Average">
-<label class="checkbox" for="Average">Average</label>
-
-<input type="checkbox" value="Beginner">
-<label class="checkbox" for="Beginner">Beginner</label>
-</div>
+                <select class="inputlabel" id="dropdown" name=selection">
+                    <option value="s1">Trees</option>
+                    <option value="s2">Flowers</option>
+                    <option value="s3">Tools</option>
+                </select>
 
 
-<legend class="abstand2"> For your recommendations </legend>
-<div id="textarea">
-<textarea> Please fill in your recommendations </textarea>
-</div>
+                <div class="abstand4">
 
-<div id="submitbuttondiv" class="abstand">
-<input id="submit" type="submit" name="submit" value="Submit">
-</div>
+                    <legend class="abstand2">Which flowers do you like most:</legend>
+                    <input class="inputlabel" id="Akelei" type="radio" name="Flowers" value="Akelei">
+                    <label for="Akelei">Akelei</label></br>
+
+                    <input class="inputlabel" id="Vergissmeinicht" type="radio" name="Flowers" value="Vergissmeinicht">
+                    <label for="Vergissmeinicht">Vergissmeinicht</label> </br>
+
+                    <input class="inputlabel" id="Gaura" type="radio" name="Flowers" value="Gaura">
+                    <label for="Gaura">Gaura</label>
+
+                </div>
+
+                <div class="abstand4">
+                    <legend>Please fill in your gardening skills: </legend>
+
+                    <input type="checkbox" value="Pro">
+                    <label class="checkbox" for="Pro">Pro</label>
+
+                    <input type="checkbox" value="Average">
+                    <label class="checkbox" for="Average">Average</label>
+
+                    <input type="checkbox" value="Beginner">
+                    <label class="checkbox" for="Beginner">Beginner</label>
+                </div>
 
 
+                <legend class="abstand2"> For your recommendations </legend>
+                <div id="textarea">
+                    <textarea> Please fill in your recommendations </textarea>
+                </div>
+
+                <div id="submitbuttondiv" class="abstand">
+                    <input id="submit" type="submit" name="submit" value="Submit">
+                </div>
 
 
 
 
 
-</form>
+
+
+            </form>
 
 
 
-</div>
+        </div>
 
 
 
-</main>
+    </main>
 
 
 
 </body>
-
-

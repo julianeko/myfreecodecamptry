@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<!--
+Copyright 2021 Juliane Kohnert
+
+This is just a testpage for me to learn html/css. I do the freecodecamp.org course and one challenge was to build a product landing page. 
+So, regarding to the content I did not give it to much of a thought as the challenge here is the coding. But the easier it will be for me to code, the more thoughts I will give about the content.
+Hence, this is not a real shop here and I do not want to sell anything.
+All pictures copyright: Juliane Kohnert; Creative Commons: Attribution-ShareAlike (CC BY-SA)
+
+-->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-5.1.0-dist/css/bootstrap.css" rel="stylesheet">
+
+
+    <title>Portfolio Page</title>
+
+</head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+    body {
+        margin: 0%;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    header {
+        background-color: #361999;
+        position: fixed;
+        background-size: cover;
+        display: block;
+        width: 100%;
+    }
+
+    #headerP {
+        font-size: 20px;
+        margin: 0%;
+        padding-top: 5px;
+        padding-left: 60px;
+        color: white;
+    }
+
+    #navbar {
+        background-color: #361999;
+        margin: 0%;
+        padding-top: 50px;
+    }
+
+    ul {
+        margin: 0%;
+        text-align: right;
+        padding-bottom: 10px;
+    }
+
+    li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    nav a:hover {
+        color: #E1F5FE;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    footer p a:link {
+        color: #ff6495;
+    }
+
+    footer p a:visited {
+        color: #ff6495;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #navbarlist {
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            padding-right: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        li {
+            padding: 0%;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #headerP {
+            padding-left: 20px;
+            padding-top: 0%;
+        }
+    }
+
+
+    #welcome-section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #361999;
+        right: 0;
+    }
+
+    .welcome-id {
+        margin-top: 5%;
+        margin-bottom: 0%;
+        padding-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        #welcome-section {
+            justify-content: center;
+            height: 150vh;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .welcome-id {
+            max-width: 50vw;
+            text-align: center;
+            padding-top: 150px;
+        }
+    }
+
+
+
+
+
+    p {
+        width: 60vw;
+    }
+
+    #h2box {
+        display: flex;
+        color: #361999;
+        margin-top: 40px;
+        text-align: center;
+        height: 30vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    h3 {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        color: white;
+    }
+
+    #portfoliosection {
+        display: flex;
+        background-color: #361999;
+        flex-direction: row;
+        max-width: 100vw;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #boxright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #survey {
+        padding-top: 20px
+    }
+
+    #tributepage {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #productpage {
+        padding-top: 20px
+    }
+
+    #documentationpage {
+        padding-top: 20px;
+    }
+
+
+    @media only screen and (max-width: 1000px) {
+        img {
+            max-width: 80vw;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+    }
+
+
+
+    footer {
+        display: flex;
+        color: #361999;
+        text-align: center;
+        height: 30vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+
+
+
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+
+    <main>
+
+        <header>
+
+
+
+            <nav id="navbar">
+
+                <p id="headerP">Juliane's portfolio page
+
+                </p>
+
+                <ul id="navbarlist">
+
+                    <li>
+                        <a href="#survey" alt="Go to the survey form screenshot">Survey Form</a>
+                    </li>
+                    <li>
+                        <a href="#documentationpage" alt="Go to the documentation page screenshot">Documentation
+                            Page</a>
+                    </li>
+                    <li>
+                        <a href="#productpage" alt="Go to the product page screenshot">Product Page</a>
+                    </li>
+                    <li>
+                        <a href="#tributepage" alt="Go to the tribute page secreenshot">Tribute Page</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <section id="welcome-section">
+
+
+
+            <h1 class="welcome-id">Welcome to Juliane's Portfolio Page
+            </h1>
+
+            <p>
+                Hello to my portfolio page. I am very happy to see you here. I am not a good coder and all this is my
+                frist try ever and i am already pretty old for things like that.
+                I am learning coding because i wanted to be able to build an app for my husband, who like never can
+                remember any birthday. I know, there is an app called calender for this,
+                but he does need a reminder like a month before, than every week and than every day. And he needs to
+                know if the person is one he has to send a present to or just a message.
+                So i am not sure if i am able to do this one day, but apart from this i rallystarted to enjoy learning
+                coding. So i keep going and hope to become a professional one day.
+            </p>
+
+        </section>
+
+
+        <section id="projects">
+
+            <div id="h2box">
+                <h2>These are the freecodecamp.org projects</h2>
+                <p>Just click on the screenshot and it will direct you to the page</p>
+            </div>
+
+            <div id="portfoliosection" ;>
+
+                <a id="survey" class="project-tile"
+                    href="https://julianeko.github.io/myfreecodecamptry/gardeningsurvey/Gardening_Survey.html">
+                    <img src="survey.png" alt="This is a screenshot with a link of the freecodecamp.org exercise to build a survey-form with html and css. 
+                         Click on the screenshot and it will direct you to the page." height="100%" width="850px">
+                </a>
+
+                <div id="boxright">
+                    <a id="documentationpage" class="project-tile"
+                        href=https://julianeko.github.io/myfreecodecamptry/documentationpage/documentationpage.html>
+                        <img src="documentationpage.png" alt="This is a screenshot of the freecodecamp.org exercise to build a technical documentation page with html and css. 
+                            Click on the screenshot and it will direct you to the page." width="850px">
+                    </a>
+
+
+                    <a id="productpage" class="project-tile"
+                        href=https://julianeko.github.io/myfreecodecamptry/productpage/productpage.html>
+                        <img src="productpage.png" alt="This is a screenshot of the freecodecamp.org exercise to build a productlandingpage with html and css. 
+                             Click on the screenshot and it will direct you to the page." width="850px">
+                    </a>
+                </div>
+
+
+                <a id="tributepage" class="project-tile"
+                    href="https://julianeko.github.io/myfreecodecamptry/gardeningpage/Gardening_Page.html">
+                    <img src="tributepage.png" alt="This is a screenshot of the freecodecamp.org exercise to build a tributepage with html and css. 
+                     Click on the screenshot and it will direct you to the page. 
+                     It is my first ever try of coding. So please have merci." width="850px">
+                </a>
+
+            </div>
+
+            </section">
+
+
+            <footer>
+                <p>Thank you for paying attention - please find my GitHub profile here:
+                    <a id="profile-link" href="https://github.com/julianeko?tab=repositories" target="_blank">julianeko
+                    </a>
+                </p>
+            </footer>
+
+    </main>
+
+
+
+
+
+</body>
